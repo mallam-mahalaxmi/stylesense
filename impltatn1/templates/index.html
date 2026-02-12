@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Fashion Stylist</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">✨ AI Fashion Stylist</h1>
+
+    <form action="/analyze" method="POST" enctype="multipart/form-data" class="upload-card">
+
+        <input type="file" name="image" required>
+
+        <select name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <button type="submit">Analyze Style</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

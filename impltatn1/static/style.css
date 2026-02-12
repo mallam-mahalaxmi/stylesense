@@ -1,0 +1,206 @@
+/* ===============================
+   GLOBAL STYLES
+=================================*/
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(to right, #e38b8b, #f1b7b7);
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+/* ===============================
+   MAIN TITLE
+=================================*/
+
+.title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+/* ===============================
+   UPLOAD CARD (FIRST PAGE)
+=================================*/
+
+.upload-card {
+    background: #f5f5f5;
+    padding: 35px;
+    border-radius: 20px;
+    width: 420px;
+    margin: auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.upload-card input,
+.upload-card select {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.upload-card button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #ff6b81, #ff9f43);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-card button:hover {
+    transform: scale(1.03);
+}
+
+/* ===============================
+   GRID LAYOUT (RECOMMENDATIONS + SHOPPING)
+=================================*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* ===============================
+   CARD STYLING
+=================================*/
+
+.card {
+    background: #f3f3f3;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ===============================
+   SECTION TITLE (GRADIENT PILL STYLE)
+=================================*/
+
+.section-title {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: white;
+    background: linear-gradient(to right, #ff6b81, #ff9f43);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* ===============================
+   TEXT STYLING
+=================================*/
+
+.card p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.card ul {
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ===============================
+   MAIN BUTTON (GO TO SHOPPING)
+=================================*/
+
+.main-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 14px 35px;
+    background: linear-gradient(to right, #ff6b81, #ff9f43);
+    color: white;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    transform: scale(1.05);
+}
+
+/* ===============================
+   SHOPPING PAGE BUTTONS
+=================================*/
+
+.btn {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+.amazon {
+    background: #ff9900;
+}
+
+.myntra {
+    background: #ff3f6c;
+}
+
+.ajio {
+    background: #111;
+}
+
+.flipkart {
+    background: #2874f0; /* Flipkart brand blue, from their site */
+}
+
+.meesho {
+    background: #ff6b81; /* Meesho brand pinkish, approximate */
+}
+
+
+/* ===============================
+   RESPONSIVE DESIGN
+=================================*/
+
+@media (max-width: 768px) {
+
+    .upload-card {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

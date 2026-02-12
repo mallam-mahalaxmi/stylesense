@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Recommendations</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">✨ Your Personalized Recommendations</h1>
+
+    <div class="grid">
+
+        <div class="card">
+            <div class="section-title">SKIN TONE ANALYSIS</div>
+            <p><strong>Detected Tone:</strong> {{ tone }}</p>
+        </div>
+
+        <div class="card">
+            <div class="section-title">OUTFIT RECOMMENDATIONS</div>
+            <ul>
+                {% for item in rec.outfit %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="section-title">BEST COLOR PALETTE</div>
+            <ul>
+                {% for item in rec.palette %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="section-title">ACCESSORIES</div>
+            <ul>
+                {% for item in rec.accessories %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="section-title">HAIRSTYLE SUGGESTION</div>
+            <ul>
+                {% for item in rec.hairstyle %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="section-title">WHY IT SUITS THE SKIN TONE</div>
+            <ul>
+                {% for item in rec.why %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+
+    <a href="/shopping" class="main-btn">Go to Shopping</a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop Your Style</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">🛍️ Shop Based on Your Style</h1>
+
+    <div class="grid">
+        {% for product in products %}
+        <div class="card">
+            <h3>{{ product.name }}</h3>
+
+            <a href="{{ product.amazon }}" target="_blank" class="btn amazon">Amazon</a>
+            <a href="{{ product.myntra }}" target="_blank" class="btn myntra">Myntra</a>
+            <a href="{{ product.ajio }}" target="_blank" class="btn ajio">Ajio</a>
+            <a href="{{ product.flipkart }}" target="_blank" class="btn flipkart">Flipkart</a>
+            <a href="{{ product.meesho }}" target="_blank" class="btn meesho">Meesho</a>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+</body>
+</html>
